@@ -1,0 +1,312 @@
+The target system is: Arduino -  - 
+The host system is: Linux - 4.14.71-v7+ - armv7l
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/avr-gcc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/pi/Razor/oscc/firmware/build/CMakeFiles/3.7.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/avr-g++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/pi/Razor/oscc/firmware/build/CMakeFiles/3.7.2/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_ec966/fast"
+/usr/bin/make -f CMakeFiles/cmTC_ec966.dir/build.make CMakeFiles/cmTC_ec966.dir/build
+make[1]: Entering directory '/home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ec966.dir/testCCompiler.c.obj
+/usr/bin/avr-gcc    -g -Os       -mcall-prologues -ffunction-sections -fdata-sections    -o CMakeFiles/cmTC_ec966.dir/testCCompiler.c.obj   -c /home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTC_ec966
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ec966.dir/link.txt --verbose=1
+/usr/bin/avr-gcc  -g -Os       -mcall-prologues -ffunction-sections -fdata-sections   -Wl,--gc-sections -lm  CMakeFiles/cmTC_ec966.dir/testCCompiler.c.obj  -o cmTC_ec966  
+make[1]: Leaving directory '/home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_5fb9b/fast"
+/usr/bin/make -f CMakeFiles/cmTC_5fb9b.dir/build.make CMakeFiles/cmTC_5fb9b.dir/build
+make[1]: Entering directory '/home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_5fb9b.dir/CMakeCCompilerABI.c.obj
+/usr/bin/avr-gcc    -g -Os       -mcall-prologues -ffunction-sections -fdata-sections    -o CMakeFiles/cmTC_5fb9b.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.7/Modules/CMakeCCompilerABI.c
+Linking C executable cmTC_5fb9b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5fb9b.dir/link.txt --verbose=1
+/usr/bin/avr-gcc  -g -Os       -mcall-prologues -ffunction-sections -fdata-sections   -Wl,--gc-sections -lm -v CMakeFiles/cmTC_5fb9b.dir/CMakeCCompilerABI.c.obj  -o cmTC_5fb9b   
+Using built-in specs.
+Reading specs from /usr/lib/gcc/avr/5.4.0/device-specs/specs-avr2
+COLLECT_GCC=/usr/bin/avr-gcc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/avr/5.4.0/lto-wrapper
+Target: avr
+Configured with: ../gcc/configure -v --enable-languages=c,c++ --prefix=/usr/lib --infodir=/usr/share/info --mandir=/usr/share/man --bindir=/usr/bin --libexecdir=/usr/lib --libdir=/usr/lib --enable-shared --with-system-zlib --enable-long-long --enable-nls --without-included-gettext --disable-libssp --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=avr CFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong -Wformat ' CPPFLAGS='-Wdate-time -D_FORTIFY_SOURCE=2' CXXFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong -Wformat ' FCFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong' FFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong' GCJFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong' LDFLAGS=-Wl,-z,relro OBJCFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong -Wformat ' OBJCXXFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong -Wformat '
+Thread model: single
+gcc version 5.4.0 (GCC) 
+COMPILER_PATH=/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/:/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/:/usr/lib/gcc/avr/5.4.0/../../../avr/bin/
+LIBRARY_PATH=/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/5.4.0/../../../avr/lib/
+COLLECT_GCC_OPTIONS='-g' '-Os' '-mcall-prologues' '-ffunction-sections' '-fdata-sections' '-v' '-o' 'cmTC_5fb9b' '-specs=device-specs/specs-avr2'
+ /usr/lib/gcc/avr/5.4.0/collect2 -plugin /usr/lib/gcc/avr/5.4.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/avr/5.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYExvz9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc --pmem-wrap-around=8k -o cmTC_5fb9b -L/usr/lib/gcc/avr/5.4.0 -L/usr/lib/gcc/avr/5.4.0/../../../avr/lib --gc-sections -lm CMakeFiles/cmTC_5fb9b.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lm -lc --end-group
+make[1]: Leaving directory '/home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(avr-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_5fb9b/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_5fb9b.dir/build.make CMakeFiles/cmTC_5fb9b.dir/build]
+  ignore line: [make[1]: Entering directory '/home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_5fb9b.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [/usr/bin/avr-gcc    -g -Os       -mcall-prologues -ffunction-sections -fdata-sections    -o CMakeFiles/cmTC_5fb9b.dir/CMakeCCompilerABI.c.obj   -c /usr/share/cmake-3.7/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTC_5fb9b]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5fb9b.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/avr-gcc  -g -Os       -mcall-prologues -ffunction-sections -fdata-sections   -Wl,--gc-sections -lm -v CMakeFiles/cmTC_5fb9b.dir/CMakeCCompilerABI.c.obj  -o cmTC_5fb9b   ]
+  ignore line: [Using built-in specs.]
+  ignore line: [Reading specs from /usr/lib/gcc/avr/5.4.0/device-specs/specs-avr2]
+  ignore line: [COLLECT_GCC=/usr/bin/avr-gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/avr/5.4.0/lto-wrapper]
+  ignore line: [Target: avr]
+  ignore line: [Configured with: ../gcc/configure -v --enable-languages=c,c++ --prefix=/usr/lib --infodir=/usr/share/info --mandir=/usr/share/man --bindir=/usr/bin --libexecdir=/usr/lib --libdir=/usr/lib --enable-shared --with-system-zlib --enable-long-long --enable-nls --without-included-gettext --disable-libssp --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=avr CFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong -Wformat ' CPPFLAGS='-Wdate-time -D_FORTIFY_SOURCE=2' CXXFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong -Wformat ' FCFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong' FFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong' GCJFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong' LDFLAGS=-Wl,-z,relro OBJCFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong -Wformat ' OBJCXXFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong -Wformat ']
+  ignore line: [Thread model: single]
+  ignore line: [gcc version 5.4.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/:/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/:/usr/lib/gcc/avr/5.4.0/../../../avr/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/5.4.0/../../../avr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-g' '-Os' '-mcall-prologues' '-ffunction-sections' '-fdata-sections' '-v' '-o' 'cmTC_5fb9b' '-specs=device-specs/specs-avr2']
+  link line: [ /usr/lib/gcc/avr/5.4.0/collect2 -plugin /usr/lib/gcc/avr/5.4.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/avr/5.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccYExvz9.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc --pmem-wrap-around=8k -o cmTC_5fb9b -L/usr/lib/gcc/avr/5.4.0 -L/usr/lib/gcc/avr/5.4.0/../../../avr/lib --gc-sections -lm CMakeFiles/cmTC_5fb9b.dir/CMakeCCompilerABI.c.obj --start-group -lgcc -lm -lc --end-group]
+    arg [/usr/lib/gcc/avr/5.4.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/avr/5.4.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/avr/5.4.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccYExvz9.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lm] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [--pmem-wrap-around=8k] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_5fb9b] ==> ignore
+    arg [-L/usr/lib/gcc/avr/5.4.0] ==> dir [/usr/lib/gcc/avr/5.4.0]
+    arg [-L/usr/lib/gcc/avr/5.4.0/../../../avr/lib] ==> dir [/usr/lib/gcc/avr/5.4.0/../../../avr/lib]
+    arg [--gc-sections] ==> ignore
+    arg [-lm] ==> lib [m]
+    arg [CMakeFiles/cmTC_5fb9b.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [--start-group] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lm] ==> lib [m]
+    arg [-lc] ==> lib [c]
+    arg [--end-group] ==> ignore
+  remove lib [gcc]
+  collapse library dir [/usr/lib/gcc/avr/5.4.0] ==> [/usr/lib/gcc/avr/5.4.0]
+  collapse library dir [/usr/lib/gcc/avr/5.4.0/../../../avr/lib] ==> [/usr/lib/avr/lib]
+  implicit libs: [m;m;c]
+  implicit dirs: [/usr/lib/gcc/avr/5.4.0;/usr/lib/avr/lib]
+  implicit fwks: []
+
+
+
+
+Detecting C [-std=c11] compiler features compiled with the following output:
+Change Dir: /home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0cb85/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0cb85.dir/build.make CMakeFiles/cmTC_0cb85.dir/build
+make[1]: Entering directory '/home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_0cb85.dir/feature_tests.c.obj
+/usr/bin/avr-gcc    -g -Os       -mcall-prologues -ffunction-sections -fdata-sections    -std=c11 -o CMakeFiles/cmTC_0cb85.dir/feature_tests.c.obj   -c /home/pi/Razor/oscc/firmware/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_0cb85
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0cb85.dir/link.txt --verbose=1
+/usr/bin/avr-gcc  -g -Os       -mcall-prologues -ffunction-sections -fdata-sections   -Wl,--gc-sections -lm  CMakeFiles/cmTC_0cb85.dir/feature_tests.c.obj  -o cmTC_0cb85  
+make[1]: Leaving directory '/home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp'
+
+
+
+
+Detecting C [-std=c99] compiler features compiled with the following output:
+Change Dir: /home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_aacc4/fast"
+/usr/bin/make -f CMakeFiles/cmTC_aacc4.dir/build.make CMakeFiles/cmTC_aacc4.dir/build
+make[1]: Entering directory '/home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aacc4.dir/feature_tests.c.obj
+/usr/bin/avr-gcc    -g -Os       -mcall-prologues -ffunction-sections -fdata-sections    -std=c99 -o CMakeFiles/cmTC_aacc4.dir/feature_tests.c.obj   -c /home/pi/Razor/oscc/firmware/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_aacc4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_aacc4.dir/link.txt --verbose=1
+/usr/bin/avr-gcc  -g -Os       -mcall-prologues -ffunction-sections -fdata-sections   -Wl,--gc-sections -lm  CMakeFiles/cmTC_aacc4.dir/feature_tests.c.obj  -o cmTC_aacc4  
+make[1]: Leaving directory '/home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp'
+
+
+
+
+Detecting C [-std=c90] compiler features compiled with the following output:
+Change Dir: /home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cfcae/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cfcae.dir/build.make CMakeFiles/cmTC_cfcae.dir/build
+make[1]: Entering directory '/home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cfcae.dir/feature_tests.c.obj
+/usr/bin/avr-gcc    -g -Os       -mcall-prologues -ffunction-sections -fdata-sections    -std=c90 -o CMakeFiles/cmTC_cfcae.dir/feature_tests.c.obj   -c /home/pi/Razor/oscc/firmware/build/CMakeFiles/feature_tests.c
+Linking C executable cmTC_cfcae
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cfcae.dir/link.txt --verbose=1
+/usr/bin/avr-gcc  -g -Os       -mcall-prologues -ffunction-sections -fdata-sections   -Wl,--gc-sections -lm  CMakeFiles/cmTC_cfcae.dir/feature_tests.c.obj  -o cmTC_cfcae  
+make[1]: Leaving directory '/home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp'
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_fd638/fast"
+/usr/bin/make -f CMakeFiles/cmTC_fd638.dir/build.make CMakeFiles/cmTC_fd638.dir/build
+make[1]: Entering directory '/home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fd638.dir/testCXXCompiler.cxx.obj
+/usr/bin/avr-g++     -g -Os       -mcall-prologues -ffunction-sections -fdata-sections -fno-exceptions    -o CMakeFiles/cmTC_fd638.dir/testCXXCompiler.cxx.obj -c /home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTC_fd638
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd638.dir/link.txt --verbose=1
+/usr/bin/avr-g++   -g -Os       -mcall-prologues -ffunction-sections -fdata-sections -fno-exceptions   -Wl,--gc-sections -lm  CMakeFiles/cmTC_fd638.dir/testCXXCompiler.cxx.obj  -o cmTC_fd638  
+make[1]: Leaving directory '/home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_cb61e/fast"
+/usr/bin/make -f CMakeFiles/cmTC_cb61e.dir/build.make CMakeFiles/cmTC_cb61e.dir/build
+make[1]: Entering directory '/home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cb61e.dir/CMakeCXXCompilerABI.cpp.obj
+/usr/bin/avr-g++     -g -Os       -mcall-prologues -ffunction-sections -fdata-sections -fno-exceptions    -o CMakeFiles/cmTC_cb61e.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTC_cb61e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb61e.dir/link.txt --verbose=1
+/usr/bin/avr-g++   -g -Os       -mcall-prologues -ffunction-sections -fdata-sections -fno-exceptions   -Wl,--gc-sections -lm -v CMakeFiles/cmTC_cb61e.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTC_cb61e   
+Using built-in specs.
+Reading specs from /usr/lib/gcc/avr/5.4.0/device-specs/specs-avr2
+COLLECT_GCC=/usr/bin/avr-g++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/avr/5.4.0/lto-wrapper
+Target: avr
+Configured with: ../gcc/configure -v --enable-languages=c,c++ --prefix=/usr/lib --infodir=/usr/share/info --mandir=/usr/share/man --bindir=/usr/bin --libexecdir=/usr/lib --libdir=/usr/lib --enable-shared --with-system-zlib --enable-long-long --enable-nls --without-included-gettext --disable-libssp --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=avr CFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong -Wformat ' CPPFLAGS='-Wdate-time -D_FORTIFY_SOURCE=2' CXXFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong -Wformat ' FCFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong' FFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong' GCJFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong' LDFLAGS=-Wl,-z,relro OBJCFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong -Wformat ' OBJCXXFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong -Wformat '
+Thread model: single
+gcc version 5.4.0 (GCC) 
+COMPILER_PATH=/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/:/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/:/usr/lib/gcc/avr/5.4.0/../../../avr/bin/
+LIBRARY_PATH=/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/5.4.0/../../../avr/lib/
+COLLECT_GCC_OPTIONS='-g' '-Os' '-mcall-prologues' '-ffunction-sections' '-fdata-sections' '-fno-exceptions' '-v' '-o' 'cmTC_cb61e' '-specs=device-specs/specs-avr2'
+ /usr/lib/gcc/avr/5.4.0/collect2 -plugin /usr/lib/gcc/avr/5.4.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/avr/5.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8WfEZl.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc --pmem-wrap-around=8k -o cmTC_cb61e -L/usr/lib/gcc/avr/5.4.0 -L/usr/lib/gcc/avr/5.4.0/../../../avr/lib --gc-sections CMakeFiles/cmTC_cb61e.dir/CMakeCXXCompilerABI.cpp.obj -lgcc -lm --start-group -lgcc -lm -lc --end-group
+make[1]: Leaving directory '/home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(avr-ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:"/usr/bin/make" "cmTC_cb61e/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTC_cb61e.dir/build.make CMakeFiles/cmTC_cb61e.dir/build]
+  ignore line: [make[1]: Entering directory '/home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_cb61e.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [/usr/bin/avr-g++     -g -Os       -mcall-prologues -ffunction-sections -fdata-sections -fno-exceptions    -o CMakeFiles/cmTC_cb61e.dir/CMakeCXXCompilerABI.cpp.obj -c /usr/share/cmake-3.7/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTC_cb61e]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cb61e.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/avr-g++   -g -Os       -mcall-prologues -ffunction-sections -fdata-sections -fno-exceptions   -Wl,--gc-sections -lm -v CMakeFiles/cmTC_cb61e.dir/CMakeCXXCompilerABI.cpp.obj  -o cmTC_cb61e   ]
+  ignore line: [Using built-in specs.]
+  ignore line: [Reading specs from /usr/lib/gcc/avr/5.4.0/device-specs/specs-avr2]
+  ignore line: [COLLECT_GCC=/usr/bin/avr-g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/avr/5.4.0/lto-wrapper]
+  ignore line: [Target: avr]
+  ignore line: [Configured with: ../gcc/configure -v --enable-languages=c,c++ --prefix=/usr/lib --infodir=/usr/share/info --mandir=/usr/share/man --bindir=/usr/bin --libexecdir=/usr/lib --libdir=/usr/lib --enable-shared --with-system-zlib --enable-long-long --enable-nls --without-included-gettext --disable-libssp --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=avr CFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong -Wformat ' CPPFLAGS='-Wdate-time -D_FORTIFY_SOURCE=2' CXXFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong -Wformat ' FCFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong' FFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong' GCJFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong' LDFLAGS=-Wl,-z,relro OBJCFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong -Wformat ' OBJCXXFLAGS='-g -O2 -fdebug-prefix-map=/home/pi/gcc-avr-5.4.0+Atmel3.6.1=. -fstack-protector-strong -Wformat ']
+  ignore line: [Thread model: single]
+  ignore line: [gcc version 5.4.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/:/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/:/usr/lib/gcc/avr/5.4.0/../../../avr/bin/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/avr/5.4.0/:/usr/lib/gcc/avr/5.4.0/../../../avr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-g' '-Os' '-mcall-prologues' '-ffunction-sections' '-fdata-sections' '-fno-exceptions' '-v' '-o' 'cmTC_cb61e' '-specs=device-specs/specs-avr2']
+  link line: [ /usr/lib/gcc/avr/5.4.0/collect2 -plugin /usr/lib/gcc/avr/5.4.0/liblto_plugin.so -plugin-opt=/usr/lib/gcc/avr/5.4.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc8WfEZl.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lm -plugin-opt=-pass-through=-lc --pmem-wrap-around=8k -o cmTC_cb61e -L/usr/lib/gcc/avr/5.4.0 -L/usr/lib/gcc/avr/5.4.0/../../../avr/lib --gc-sections CMakeFiles/cmTC_cb61e.dir/CMakeCXXCompilerABI.cpp.obj -lgcc -lm --start-group -lgcc -lm -lc --end-group]
+    arg [/usr/lib/gcc/avr/5.4.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/avr/5.4.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/avr/5.4.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc8WfEZl.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lm] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [--pmem-wrap-around=8k] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_cb61e] ==> ignore
+    arg [-L/usr/lib/gcc/avr/5.4.0] ==> dir [/usr/lib/gcc/avr/5.4.0]
+    arg [-L/usr/lib/gcc/avr/5.4.0/../../../avr/lib] ==> dir [/usr/lib/gcc/avr/5.4.0/../../../avr/lib]
+    arg [--gc-sections] ==> ignore
+    arg [CMakeFiles/cmTC_cb61e.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lm] ==> lib [m]
+    arg [--start-group] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lm] ==> lib [m]
+    arg [-lc] ==> lib [c]
+    arg [--end-group] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc]
+  collapse library dir [/usr/lib/gcc/avr/5.4.0] ==> [/usr/lib/gcc/avr/5.4.0]
+  collapse library dir [/usr/lib/gcc/avr/5.4.0/../../../avr/lib] ==> [/usr/lib/avr/lib]
+  implicit libs: [m;m;c]
+  implicit dirs: [/usr/lib/gcc/avr/5.4.0;/usr/lib/avr/lib]
+  implicit fwks: []
+
+
+
+
+Detecting CXX [-std=c++14] compiler features compiled with the following output:
+Change Dir: /home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_568f3/fast"
+/usr/bin/make -f CMakeFiles/cmTC_568f3.dir/build.make CMakeFiles/cmTC_568f3.dir/build
+make[1]: Entering directory '/home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_568f3.dir/feature_tests.cxx.obj
+/usr/bin/avr-g++     -g -Os       -mcall-prologues -ffunction-sections -fdata-sections -fno-exceptions    -std=c++14 -o CMakeFiles/cmTC_568f3.dir/feature_tests.cxx.obj -c /home/pi/Razor/oscc/firmware/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_568f3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_568f3.dir/link.txt --verbose=1
+/usr/bin/avr-g++   -g -Os       -mcall-prologues -ffunction-sections -fdata-sections -fno-exceptions   -Wl,--gc-sections -lm  CMakeFiles/cmTC_568f3.dir/feature_tests.cxx.obj  -o cmTC_568f3  
+make[1]: Leaving directory '/home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp'
+
+
+
+
+Detecting CXX [-std=c++11] compiler features compiled with the following output:
+Change Dir: /home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_388dc/fast"
+/usr/bin/make -f CMakeFiles/cmTC_388dc.dir/build.make CMakeFiles/cmTC_388dc.dir/build
+make[1]: Entering directory '/home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_388dc.dir/feature_tests.cxx.obj
+/usr/bin/avr-g++     -g -Os       -mcall-prologues -ffunction-sections -fdata-sections -fno-exceptions    -std=c++11 -o CMakeFiles/cmTC_388dc.dir/feature_tests.cxx.obj -c /home/pi/Razor/oscc/firmware/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_388dc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_388dc.dir/link.txt --verbose=1
+/usr/bin/avr-g++   -g -Os       -mcall-prologues -ffunction-sections -fdata-sections -fno-exceptions   -Wl,--gc-sections -lm  CMakeFiles/cmTC_388dc.dir/feature_tests.cxx.obj  -o cmTC_388dc  
+make[1]: Leaving directory '/home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp'
+
+
+
+
+Detecting CXX [-std=c++98] compiler features compiled with the following output:
+Change Dir: /home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_8b3df/fast"
+/usr/bin/make -f CMakeFiles/cmTC_8b3df.dir/build.make CMakeFiles/cmTC_8b3df.dir/build
+make[1]: Entering directory '/home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8b3df.dir/feature_tests.cxx.obj
+/usr/bin/avr-g++     -g -Os       -mcall-prologues -ffunction-sections -fdata-sections -fno-exceptions    -std=c++98 -o CMakeFiles/cmTC_8b3df.dir/feature_tests.cxx.obj -c /home/pi/Razor/oscc/firmware/build/CMakeFiles/feature_tests.cxx
+Linking CXX executable cmTC_8b3df
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b3df.dir/link.txt --verbose=1
+/usr/bin/avr-g++   -g -Os       -mcall-prologues -ffunction-sections -fdata-sections -fno-exceptions   -Wl,--gc-sections -lm  CMakeFiles/cmTC_8b3df.dir/feature_tests.cxx.obj  -o cmTC_8b3df  
+make[1]: Leaving directory '/home/pi/Razor/oscc/firmware/build/CMakeFiles/CMakeTmp'
+
+

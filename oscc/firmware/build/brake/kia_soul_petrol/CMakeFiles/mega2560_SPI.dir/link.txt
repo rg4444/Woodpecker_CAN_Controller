@@ -1,0 +1,2 @@
+/usr/bin/avr-ar qc libmega2560_SPI.a  CMakeFiles/mega2560_SPI.dir/usr/share/arduino/libraries/SPI/SPI.cpp.obj
+/usr/bin/avr-ranlib libmega2560_SPI.a
