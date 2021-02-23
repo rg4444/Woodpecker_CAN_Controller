@@ -6,12 +6,28 @@
 #include <sys/time.h>
 #include <fcntl.h>
 
+
 #include "oscc.h"
 #include "commander.h"
 #include "can_protocols/steering_can_protocol.h"
+#include "steering_pid.h"
+#include "speed_pid.h"
+#include "gps.h"
+#include "udp_api.h"
+
+#include "bumble_grabber.hpp"
+
+#include "timer.h"
+
 
 #define COMMANDER_UPDATE_INTERVAL_MICRO (50000)
 #define SLEEP_TICK_INTERVAL_MICRO (1000)
+
+int m_test_loop_start(void);
+
+
+struct timeval frame_timer; //extern in commander.c
+
 
 static int error_thrown = OSCC_OK;
 
@@ -37,14 +53,19 @@ void signal_handler( int signal_number )
     if ( signal_number == SIGINT )
     {
         error_thrown = OSCC_ERROR;
+        destroy_camera();
     }
 }
+
+
+
 
 int main( int argc, char **argv )
 {
     oscc_result_t ret = OSCC_OK;
     unsigned long long update_timestamp = get_timestamp_micro();
     unsigned long long elapsed_time = 0;
+
 
     int channel;
 
@@ -62,16 +83,42 @@ int main( int argc, char **argv )
 
     ret = commander_init( channel );
 
+    timer_start(&frame_timer);
+
     if ( ret == OSCC_OK )
     {
-        printf( "\nControl Ready:\n" );
-        printf( "    START - Enable controls\n" );
-        printf( "    BACK - Disable controls\n" );
-        printf( "    LEFT TRIGGER - Brake\n" );
-        printf( "    RIGHT TRIGGER - Throttle\n" );
-        printf( "    LEFT STICK - Steering\n" );
-        printf( "    Wakakakakakaakaka - Baka\n" );
 
+        // Steering angle control loop init and start
+        steering_angle_loop_start();
+
+        // Speed control loop init and start
+        //speed_loop_start();
+
+        // GPS loop start
+        gps_loop_start();
+        
+        // UDP API for commander
+        udp_api_start();
+
+        // Wait a bit
+        usleep( 500000 );
+
+        // Menu
+        printf( "\n\n\nH E L P :\n" );
+        printf( "=========\n" );
+        printf( "    START - Enable Controls, set Joytick mode (1)\n" );
+        printf( "        Controls:\n" );
+        printf( "           - LEFT TRIGGER-Brake\n" );
+        printf( "           - RIGHT TRIGGER-Throttle\n" );
+        printf( "           - LEFT STICK-Steering\n" );
+    //    printf( "    X - UDP drive mode (2)\n" );
+        printf( "    BACK - Disable Controls, set manual mode (0)\n" );
+    //   printf( "* Caution: to use X command, Controls must be enabled (START pressed before)\n");
+
+
+
+
+        // Main loop
         while ( ret == OSCC_OK && error_thrown == OSCC_OK )
         {
             elapsed_time = get_elapsed_time( update_timestamp );
@@ -79,7 +126,6 @@ int main( int argc, char **argv )
             if ( elapsed_time > COMMANDER_UPDATE_INTERVAL_MICRO )
             {
                 update_timestamp = get_timestamp_micro();
-
                 ret = check_for_controller_update( );
             }
 
@@ -87,8 +133,11 @@ int main( int argc, char **argv )
             (void) usleep( SLEEP_TICK_INTERVAL_MICRO );
         }
         commander_close( channel );
+   
     }
+
 
     return 0;
 }
+
 
